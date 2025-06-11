@@ -3,7 +3,7 @@
 Simple research onto whether real-time mempool congestion on Ethereum can predict short-horizon ETH volatility.
 
 ## 2. Data Pipeline:
-Query using Ethereum Mempool data in DuneSQL (flashbot mempool dumpster) and fetched using dune-client and REST API. 
+[Query using Ethereum Mempool data in DuneSQL (flashbot mempool dumpster)](https://dune.com/queries/5270084) and fetched using dune-client and REST API. 
 
 ## 3. Hypothesis:
 H1: “A spike in the 90-percentile gas bid raises the next-5-minute realised ETH volatility.”
