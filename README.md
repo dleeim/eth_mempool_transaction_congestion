@@ -1,22 +1,22 @@
 # eth_mempool_transaction_congestion
-1. Objective:
+1. Objective:< br/>
 Simple research onto whether real-time mempool congestion on Ethereum can predict short-horizon ETH volatility.
 
-2. Data Pipeline:
+2. Data Pipeline:< br/>
 Query using Ethereum Mempool data in DuneSQL (flashbot mempool dumpster) and fetched using dune-client and REST API. 
 
-3. Hypothesis:
+3. Hypothesis:< br/>
 H1: “A spike in the 90-percentile gas bid raises the next-5-minute realised ETH volatility.”
 
-4. Methods:
+4. Methods:< br/>
 Created and analysed HAC-robust OLS model with scatter and overlay plots for visual sanity.
 
-5. Results: 
-| Metric  | Value |
+5. Results:< br/>
+| Metric        | Value         |
 | ------------- | ------------- |
-| p-value  | 0.35  |
-| R^2  | 0.001  |
-| Durbin-Watson  | 0.30  |
+| p-value       | 0.35          |
+| R^2           | 0.001         |
+| Durbin-Watson | 0.30          |
 
 6. Conclusion:
 No statistical evidence: gas-z explains <0.1 % of forward vol; residuals highly autocorrelated.
